@@ -10,3 +10,9 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/GTEM0/-FRONT.git
 git push -u origin main
+
+
+처음 이후로 깃에 올릴때
+git add .
+git commit -m "day? second or third"
+git push -u origin main

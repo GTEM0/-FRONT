@@ -1,0 +1,12 @@
+git config --global user.name  "GTEM0"
+git config --global user.email  "kb524rag@naver.com"
+
+git config --list
+
+echo "# -FRONT" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/GTEM0/-FRONT.git
+git push -u origin main

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        ul{
+            /*list-style: none; 을 하면 list에 있던 º(점)이 빠진다*/
+            list-style: none;
+            width: 920px;
+            /*flex는 대상과 그 부모격이 되는게 누군지 확인하고 하면됨*/
+            display: flex;
+            flex-wrap: wrap;
+            /*border:1px solid black;*/
+
+
+           margin: 0 auto;
+
+        }
+        ul li{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            text-align: center;
+
+            border-right: 1px solid black;
+        }
+        img{
+            width: 250px;
+            height: 250px;
+        }
+        p{
+            font-size: 12px;
+            text-align: center;
+        }
+
+        ul li:nth-child(1){
+            border-right: 0px;
+            border-bottom: 0px;
+        }
+        ul li:nth-child(2){
+            border-right: 0px;
+            border-bottom: 0px;
+        }
+        ul li:nth-child(3){
+            border-bottom: 0px;
+        }
+        ul li:nth-child(4){
+            border-right: 0px;
+        }
+        ul li:nth-child(5){
+            border-right: 0px;
+        }
+        
+
+    </style>
+
+
+</head>
+<body>
+
+    <ul>
+        <li>
+            <img src="./디퓨저.jpg">
+            <p> 가격:25,000원 </p>
+            <p> 향이 좋아요 !! </p>
+        </li>
+
+        <li>
+            <img src="./디퓨저.jpg">
+            <p> 가격:25,000원 </p>
+            <p> 향이 좋아요 !! </p>
+        </li>
+
+        <li>
+            <img src="./디퓨저.jpg">
+            <p> 가격:25,000원 </p>
+            <p> 향이 좋아요 !! </p>
+        </li>
+
+        <li>
+            <img src="./디퓨저.jpg">
+            <p> 가격:25,000원 </p>
+            <p> 향이 좋아요 !! </p>
+        </li>
+
+        <li>
+            <img src="./디퓨저.jpg">
+            <p> 가격:25,000원 </p>
+            <p> 향이 좋아요 !! </p>
+        </li>
+        
+        <li>
+            <img src="./디퓨저.jpg">
+            <p> 가격:25,000원 </p>
+            <p> 향이 좋아요 !! </p>
+        </li>
+
+        
+    </ul>
+
+
+    
+</body>
+</html>

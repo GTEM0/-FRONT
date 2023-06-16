@@ -10,8 +10,12 @@
         나중에 지워줘야 자유롭게 맞춰짐*/
         .top{
             
-            height: 10px;
             border: 3px solid rgb(10, 186, 181);
+            border-left: 0px;
+            border-right: 0px;
+            text-align: center;
+            border-bottom: 10px solid rgb(10, 186, 181);
+
         }
         
         .footer{
@@ -57,19 +61,36 @@
             height: 100%;
         }
         .item6{
-            text-align: center;
+            text-align: left;
         }
+        
         .bottom{
             display: flex;
-            
         }
-        item6{
-            width:50%;
+            
         
+        input{
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            width:100%;
         }
-        item7{
-            width:50%;
+      
+        select{
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+        }
+
+        .b1{
             
+            margin: 0%;
+            width: 15%;
+        }
+        .b2{
+            width: 70%;
+            text-align: center;
         }
     </style>
 
@@ -78,7 +99,8 @@
 </head>
 <body>
     <div class="top">
-
+        <h2>홈</h2>
+    
     </div>
     <div class="footer">
 
@@ -140,16 +162,27 @@
         </div>
         
     </div>
-    <div class="bottom">
-        <div class="item6">
-      위치 선택: 한국 ▼  
+    
+        <div class="bottom">
+            <div class=b1>
+                <li1>
+
+                    <select>
+                        <option>위치선택: 한국</option>
+                        <option>America</option>
+                        <option>Asia/Pacific</option>
+                        <option>Europe</option>
+                        <option>All other locations</option>
+                    </select>
+                    
+                </li1>
+            </div>
+            <div class=b2>© T&CO. 2023</div>
+            
+        </div>
         
-        </div>
-        <div class="item7">
 
-            © T&CO. 2023
-
-        </div>
+        
     </div>
 
     

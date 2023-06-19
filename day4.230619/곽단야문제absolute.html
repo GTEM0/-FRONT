@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .board{
+            border: 1px solid black;
+            margin: 5px;
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+
+       
+        
+        .div1{
+            left: 50px;
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            position: absolute;
+            bottom: 10px;
+            line-height: 50px;
+
+        }
+        .div2{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            left: 100px;
+            line-height: 50px;
+            
+        }
+        .div3{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            position: absolute;
+            top: 220px;
+            left: 230px;        
+            line-height: 50px;
+        }
+        .div4{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            left: 430px;
+            line-height: 50px;
+        }
+        .div5{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            position: absolute;
+            bottom: 10px;
+            left: 400px;
+            line-height: 50px;
+        }
+
+        div:hover{
+            position: relative;
+            left: 5px;
+            top: 5px;
+
+        }
+    </style>
+
+
+</head>
+<body>
+    <p><h2>board판을 기준(부모영역을 기준으로)으로 <mark>각 box를 마음대로 붙이려면....</mark></h2></p>
+    
+
+    <div class="board">
+
+    <div class="div1">E</div>
+    <div class="div2">O</div>
+    <div class="div3">L</div>
+    <div class="div4">L</div>
+    <div class="div5">H</div>
+    
+    </div>
+
+</body>
+</html>

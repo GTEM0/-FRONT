@@ -1,0 +1,10 @@
+태그요소 display 속성
+block			가로 한줄을 다 차지함(p/h/div/li)
+inline-block		컨텐츠 크기만큼만 가능하나 변환 가능
+inline			컨텐츠 크기만큼만
+
+
+태그요소 배치 : position 속성	html 문서 상에서 요소가 배치되는 방식을 결정
+-relative		숙주
+-absolute		기생충 문서를 기준으로 배치됨
+-fixed			고정

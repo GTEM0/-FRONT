@@ -6,141 +6,125 @@
     <title>Document</title>
 
     <style>
-        
-        .header{
-            width: 800px;
-            height: 50px;
-            display: flex;
-            margin: 0 auto;
-            margin-top: 50px;
-            position: relative;
-            
-        }
-
-        .img1{
-            width: 25%;
-            
-            
-        }
-        
-        .img2{
-            width: 3%;
-            margin-top: 10px;
-            right: 320px;
-            position: absolute;
-        }
-        .search{
-            width:36%;
-            
-            
-        }
-        .text{
-            outline: none;
-        }
-        ul{
-            display: flex;
-        }
-        li{
-            list-style: none;
+       /* *{
             border: 1px solid black;
-            text-align: center;
-            width: 50px;
-            height: 50px;
-
+        }*/
+        .header{
+            width: 1000px;
+            height: 80px;
+            
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+        }
+        .lotte-img{
+            height: 30px;
+            
+            margin-left: 1%;
         }
 
-        .menu{
-            width:36%;
+              
+        .search-bar{
+            height: 35px;
+            width: 400px;
+            border: 1px solid red;
+            margin-left: 3%;
             display: flex;
-            font-size: 11px;
-            position: relative;
+            align-items: center;
+            border-radius: 50px;
+            
+            justify-content: center;
+        }
+
+        .text_input{
+            width: 350px;
+            border: 0px;
+            margin-left: 4px;
+            outline: 0px;
+            
             
         }
-
-        li img{
-            width: 30px;
+        .text_img{
+            width: 25px;
             height: 25px;
         }
 
-        .txt{
-            margin: 2px;
-            height: 40px;
-        }
-        input{
-            width:240px;
-            
+        .icon-ul{
+            display: flex;
+            list-style: none;
+            margin-left: 30px;
+            max-width: 0px;
         }
 
-
-        span{
-            display: block;
-        }
-
-        .search{
-            width: 400px;
+        .li1{
+            margin-left: 5px;
+            width: 70px;
             height: 50px;
-            border: 1px solid red;
-            background: white;
-            border-radius: 30px;
-        }
-        
-        input{
-            width: 330px;
-            margin-top: 15px;
-            margin-left: 15px;
-            border: 0px;
-            outline: none;
-            float: left;
-            font-size: 15px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            display: flex;
         }
 
-        button{
-            width: 50px;
-            height: 100%;
-            outline: none;
-            float: right;
-            border: 0px;
-            background: none;
+        .img1{
+            width:40px;
+            height: 40px;
+
         }
-        
+        a{
+            font-size: 7px;
+        }
     </style>
 
 
 </head>
 <body>
-    <div class="top">
 
-    
+    <!-- 헤더 전체 -->
     <div class="header">
+    <div>
+        <!-- 롯데몰 이미지 -->
+    
+            <img class="lotte-img" src="./img롯데온이미지.png">
+        </div> 
+        <!-- 검색창 -->
+        <div class="search-bar">
+            <input class="text_input" type="text">
+            <img class="text_img" src="./img롯데온돋보기.png">
+        </div>       
 
-        <img class="img1" src="./롯데온이미지.png">
 
-    <div class="search">
-        <input type="text" placeholder="검색어를 입력해주세요">
-        <button><img src="./img롯데온돋보기.png"></button>
+        <!-- 메뉴창 -->
+        <div >
+            <ul class="icon-ul">
+                
+                <li class="li1">
+                    <img class="img1"   src="./img전원로고.png">
+                    <a style="font-size: 7px;"> 로그인 </a>
+                </li>
+
+                <li class="li1">
+                    <img class="img1"   src="./img장바구니로고.png">
+                    <a> 장바구니 </a>
+                </li>
+
+                <li class="li1">
+                    <img class="img1"   src="./img배송로고.png">
+                    <a> 주문배송 </a>
+                </li>
+
+                <li class="li1">
+                    <img class="img1"   src="./img사람로고.png">
+                    <a> 마이롯데 </a>
+                </li>
+
+
+
+            </ul>
+        </div>
     </div>
-
-    <div class="menu">
-
-        <ul>
-            <li class="item1"> <img src="./전원버튼로고.png"><span >챗봇</span></li>
-            <li class="item2">나의 찜</li>
-            <li class="item3">마이롯데</li>
-            <li class="item4">장바구니</li>
-        </ul>
-
-    </div>
-        
-    </div>
-   
-   
-
-    </div>
-
 
 
     
-
-
 </body>
 </html>

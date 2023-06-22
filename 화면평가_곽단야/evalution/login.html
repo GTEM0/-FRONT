@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header {
+
+            height: 100px;
+
+            background-color: rgb(245, 248, 248);
+            position: relative;
+            display: flex;
+            margin: 0 auto;
+        }
+
+        .title {
+            position: absolute;
+            left: 10px;
+            top: 20px;
+
+        }
+
+        .acorn_img {
+            width: 200px;
+            height: 70px;
+        }
+
+        .text_wrap {
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
+            display: flex;
+
+
+        }
+
+        .text_box {
+            margin-left: 5px;
+            right: 10px;
+            border: 0px;
+            outline: 0px;
+
+        }
+
+        .readglass_img {
+            width: 30px;
+            height: 30px;
+            right: 20px;
+            margin-top: 0px;
+
+        }
+
+        nav {
+            padding: 20px;
+            height: 40px;
+
+            background-color: rgb(232, 243, 243);
+
+
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .menu_login {
+            position: absolute;
+            right: 40px;
+            top: 30px;
+        }
+
+        .log_wrap {
+            width: 400px;
+            padding: 20px;
+            border: 1px solid rgb(234, 222, 222);
+            margin: 0 auto;
+            margin-top: 40px;
+
+        }
+
+        .log_img {
+            width: 300px;
+            height: 300px;
+            background-image: url(./images/images/login_logo.jpg);
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto;
+
+        }
+
+        .log_info {
+            padding: 10px;
+        }
+
+        .log_info>input {
+
+            width: 98%;
+            height: 40px;
+            margin-top: 5px;
+        }
+
+        button {
+            width: 100%;
+            height: 50px;
+            background-color: silver;
+            border: 0px;
+            margin-top: 10px;
+
+        }
+
+        footer {
+            padding: 20px;
+            background-color: rgb(233, 239, 239);
+            padding: 10px;
+            margin-top: 60px;
+        }
+
+        .footer {
+            display: flex;
+            height: 60px;
+
+
+        }
+
+        .footer_1st {
+
+            width: 33%;
+        }
+
+        .footer_2nd {
+
+            width: 33%;
+        }
+
+        .footer_3rd {
+
+            width: 33%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="title">
+            <img class="acorn_img" src="./images/images/logo.png">
+        </div>
+
+        <div class="text_wrap">
+            <input class=text_box type="text">
+            <img class="readglass_img" src="./images/images/검색.png">
+
+        </div>
+
+    </header>
+
+
+    <nav class="menu">
+        <div class="menu_login"><a href="login.html" style="text-decoration: none;">로그인</a> │ <a href="index.html"
+                style="text-decoration: none;">홈으로</a>
+        </div>
+
+    </nav>
+
+    <!--로그인전체영역-->
+    <div class="log_wrap">
+
+        <!--로그인 이미지영역-->
+        <div class="log_img"></div>
+
+        <!--로그인 정보입력 영역-->
+        <div class="log_info"></div>
+        <input type="text" placeholder="아이디">
+        <input type="text" placeholder="비번">
+        <button>로그인</button>
+
+
+
+    </div>
+
+    <footer class="footer">
+
+        <div class="footer_1st">
+            <img src="./images/images/footer_acorn.png">
+        </div>
+
+        <div class="footer_2nd">
+            <span>에이콘ACDEMY(홍대)</span>
+        </div>
+
+        <div class="footer_3rd">
+            <span>COPYRIGHT(C) HBILAB ALL RIGHTS RESERVED.</span>
+        </div>
+
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

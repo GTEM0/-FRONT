@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let week = parseInt(prompt("몇주차?", "1=1주차, 2=2주차, 3-3주차, 4=4주차"));
+        let day = parseInt(prompt("무슨 요일?","0=월요일, 1=화요일, 2=수요일, 3=목요일, 4=금요일"));
+        
+        let menu = [[],
+                    ["스테이크", "불고기", "김치찌개", "비빔밥", "김치볶음밥"],
+                    ["탕수육", "매생이국", "초밥", "짬뽕", "설렁탕"],
+                    ["비빔국수", "냉면", "쌀국수", "갈비탕", "육개장"],
+                    ["순대국", "마파두부", "팟타이", "김밥", "떡볶이"]];
+
+            for(i=0; i<5; i++){
+            for(j=0; j<6; j++){
+                /* console.log(menu[2][2]); */
+                alert(menu[week][day]);
+            }
+            }
+
+    </script>
+    
+
+
+    
+</body>
+</html>

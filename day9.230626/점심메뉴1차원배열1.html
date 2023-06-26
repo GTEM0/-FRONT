@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+                
+
+
+        let menu1st = ["스테이크", "불고기", "김치찌개", "비빔밥", "김치볶음밥"];
+        let menu2nd = ["탕수육", "매생이국", "초밥", "짬뽕", "설렁탕"];
+        let menu3rd = ["비빔국수", "냉면", "쌀국수", "갈비탕", "육개장"];
+        let menu4th = ["순대국", "마파두부", "팟타이", "김밥", "떡볶이"];
+
+        console.log(menu2nd[4]); // 2주차 금요일 메뉴 
+        console.log(menu4th[0]); //  4주차 월요일 메뉴 
+
+
+       let week=  prompt("몇주차인지 선택하세요", "1주차=0, 2주차=1, 3주차=2, 4주차=3");
+       let day =  prompt("무슨요일인지 선택하세요", "월요일=0, 화요일=1, 수요일=2, 목요일=3, 금요일=4");0
+        
+
+       if(week==0 ){
+             alert(menu1st[day]);          
+
+       }else if ( week==1){
+            alert( menu2nd[day] );
+       }else if(week==2){
+        alert(menu3rd[day]);
+       }else if(week==3){
+        alert(menu4th[day]);
+       }
+
+
+
+    </script>
+    
+
+
+    
+</body>
+</html>

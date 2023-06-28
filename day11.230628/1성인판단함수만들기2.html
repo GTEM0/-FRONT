@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    // 생년월일을 물어보는 함수
+    function askBirthday() {
+        let birthday = prompt("생년월일을 입력하세요 (YYYY-MM-DD)");
+
+        // 입력받은 생년월일을 Date 객체로 변환
+        let birthDate = new Date(birthday);
+        let currentDate = new Date();
+
+        // 성인 여부를 판단하는 함수
+        function isAdult() {
+            // 생년월일로부터 만 19세 이상인지 확인
+            return (currentDate.getFullYear() - birthDate.getFullYear() > 19) || 
+                   (currentDate.getFullYear() - birthDate.getFullYear() === 19 && 
+                    currentDate.getMonth() > birthDate.getMonth()) ||
+                   (currentDate.getFullYear() - birthDate.getFullYear() === 19 && 
+                    currentDate.getMonth() === birthDate.getMonth() && 
+                    currentDate.getDate() >= birthDate.getDate());
+        }
+
+        // 성인 여부 확인
+        let result = isAdult();
+
+        // 성인이면 물건을 구매할 수 있다는 알림 출력
+        if (result === true) {
+            alert("물건을 구매할 수 있습니다!");
+        } else {
+            alert("어른만 구매할 수 있습니다.");
+        }
+    }
+
+    // 생년월일 물어보는 함수 호출
+    askBirthday();
+
+    
+</script>
+
+</body>
+</html>

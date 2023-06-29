@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <title>이미지 나열 페이지</title>
+
+  
+  <style>
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .image-item {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+
+
+</head>
+<body>
+
+
+  <div class="image-grid">
+    <!-- 이미지 아이템들을 여기에 추가합니다 -->
+  </div>
+
+
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const imageGrid = document.querySelector('.image-grid');
+
+      // 이미지 파일 경로와 파일 이름을 배열로 선언합니다.
+      const imageFiles = [
+        'images/image1.jpg',
+        'images/image2.jpg',
+        'images/image3.jpg',
+        // 추가적인 이미지 파일 경로를 여기에 추가합니다
+      ];
+
+      // 이미지 아이템들을 동적으로 생성하여 이미지 그리드에 추가합니다.
+      imageFiles.forEach((imageFile) => {
+        const imageItem = document.createElement('img');
+        imageItem.src = imageFile;
+        imageItem.alt = '이미지';
+        imageItem.classList.add('image-item');
+        imageGrid.appendChild(imageItem);
+      });
+    });
+
+
+  </script>
+
+
+
+</body>
+</html>

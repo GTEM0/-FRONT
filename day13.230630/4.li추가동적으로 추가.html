@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="addLi()"> li 추가 </button>
+
+    <!-- ul -->
+    <ul id="list">
+
+    </ul>
+
+    <script>
+//li를 누르면 망고가 추가되고, 망고를 누르면 망고가 사라짐. 함수 익명으로 만든 코드.
+
+        function addLi() {
+            //추가
+            //1. 부모를 사용할 대상(태그)를 선택한다
+            let ulE = document.getElementById("list");
+
+            let li = document.createElement("li");
+            li.innerHTML = "망고";
+            //
+            ulE.appendChild(li);
+            //appendChild = 트리구조로 만들어져있음. 부모가 누구고 자식이 누군지 구분하면서 자라나는게 트리구조다. ul이 부모, li가 자식.
+
+                                //click이라는 이벤트 용어임
+            li.addEventListener("click", function () {
+
+                let p = this.parentElement;
+                p.removeChild(li);
+
+            });
+
+
+        }
+
+        //이벤트       : click focus blur keyup 
+        //이벤트리스너  : onclick onfocus
+        //이벤트핸들러  : func2 함수, 이벤트핸들러 역할을 함
+        //이벤트객체    : 이벤트 발생정보를 담은 객체
+
+    </script>
+
+
+</body>
+
+</html>

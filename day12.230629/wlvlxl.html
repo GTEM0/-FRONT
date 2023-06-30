@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #slideshow-container {
+      width: 500px;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    #slideshow {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      width: 100%;
+      height: 100%;
+    }
+
+    #prev-button,
+    #next-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: none;
+      color: #000;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    #prev-button {
+      left: 10px;
+    }
+
+    #next-button {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="slideshow-container">
+    <div id="slideshow">
+      <img class="slide" src="./coffee-blue.jpg" alt="Image 1">
+      <img class="slide" src="./coffee-gray.jpg" alt="Image 2">
+      <img class="slide" src="./coffee-pink.jpg" alt="Image 3">
+      <img class="slide" src="./coffee-blue.jpg" alt="Image 4">
+      <img class="slide" src="./coffee-gray.jpg" alt="Image 5">
+    </div>
+    <button id="prev-button">◀</button>
+    <button id="next-button">▶</button>
+  </div>
+
+  <script>
+    const slideshowContainer = document.getElementById('slideshow-container');
+    const slideshow = document.getElementById('slideshow');
+    const slides = document.querySelectorAll('.slide');
+    const prevButton = document.getElementById('prev-button');
+    const nextButton = document.getElementById('next-button');
+
+    let currentSlide = 0;
+    const slideWidth = slideshowContainer.offsetWidth;
+
+    function showSlide(index) {
+      slideshow.style.transform = `translateX(${-index * slideWidth}px)`;
+    }
+
+    function nextSlide() {
+      currentSlide++;
+      if (currentSlide >= slides.length) {
+        currentSlide = 0;
+      }
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide--;
+      if (currentSlide < 0) {
+        currentSlide = slides.length - 1;
+      }
+      showSlide(currentSlide);
+    }
+
+    nextButton.addEventListener('click', nextSlide);
+    prevButton.addEventListener('click', prevSlide);
+
+    setInterval(nextSlide, 3000); // 이미지가 3초마다 전환됩니다.
+  </script>
+</body>
+</html>

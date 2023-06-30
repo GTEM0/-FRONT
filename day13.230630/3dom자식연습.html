@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <script>
+
+        function hello(f){
+            alert("저녁 메뉴 고민해보자");
+            f();
+            }
+
+        function message1(){
+            alert("흠...");
+        }
+
+        function message2(){
+            alert("고민중...");
+        }
+
+        hello(message1);
+        hello(message2);
+
+        function aFunc(){
+            alert("생각났다!");
+        }
+
+        setTimeout(aFunc, 5000);
+
+     
+
+        setTimeout(function(){
+            alert("오늘 저녁 메뉴는 바로바로...!");
+        }, 2000);
+
+        setTimeout(()=> alert("아몰랑ㅋ"),5000)
+
+    </script> -->
+
+    <div id="movie">
+
+        <p>범죄도시</p>
+        <p>princess of murmade</p>
+        <p>door locking by suzume</p>
+
+    </div>
+
+    <script>
+
+        let movie = document.getElementById("movie");
+
+        let pE1 = movie.firstElementChild;
+        let pE2 = pE1.nextElementSibling;
+        let pE3 = movie.lastElementChild;
+
+        let movie1 = pE1.innerHTML;
+        let movie2 = pE2.innerHTML;
+        let movie3 = pE3.innerHTML;
+
+        alert(movie1);
+        alert(movie2);
+        alert(movie3);
+
+    </script>
+
+
+</body>
+
+</html>

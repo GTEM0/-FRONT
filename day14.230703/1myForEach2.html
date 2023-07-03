@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // 기능:  실행할코드정보(함수)를 3번 반복해 주는 기능
+        // 입력: 콜백함수
+        // 반환값: 없음
+        function myForEach(f) {
+            for (let i = 0; i < 3; i++) {
+                f();
+            }
+        }
+
+        function menu1() {
+            alert("돈까스");
+        }
+        //오므라이스 메뉴를 3번 알림창에 띄우기
+        function menu2() {
+            alert("오므라이스");
+            alert("오므라이스");
+            alert("오므라이스");
+        }
+        //돈까스 메뉴를 3번 알림창에 띄우기
+        function menu2() {
+            alert("돈까스");
+            alert("돈까스");
+            alert("돈까스");
+        }
+
+        //돈까스 메뉴를 3번 알림창에 띄우기
+        //1번
+        function menu11() {
+            for (let i = 1; i <= 3; i++) {
+                alert("돈까스");
+            }
+        }
+
+
+        //오므라이스 메뉴를 3번 알림창에 띄우기
+        //2번
+        function menu22() {
+            for (let i = 1; i <= 3; i++) {
+                alert("오므라이스");
+            }
+        }
+
+
+        function myForEach0(f) {             //위의 1,2번 함수를 한개로 만든것
+            for (let i = 1; i <= 3; i++) {
+                f();                        //f(); 반복하고 싶은것을 안에 넣음. 
+                                            //     그 요소는 아래에 각각 만들어줌.
+            }
+        }
+
+        myForEach0(function () {
+            alert("오므라이스");
+        });
+
+        myForEach0(function () {
+            alert("돈까스");
+        });
+
+        myForEach(menu1);
+        myForEach(menu2);
+        myForEach(function () {
+            alert(" 삼겹살, 소주");
+        });
+
+
+    </script>
+
+</body>
+
+</html>

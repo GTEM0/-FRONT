@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #image-slider {
+            width: 500px; /* 이미지의 가로 크기에 맞게 조정 */
+            height: 300px; /* 이미지의 세로 크기에 맞게 조정 */
+            overflow: hidden;
+            position: relative;
+        }
+        
+        #image-slider img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            transition: transform 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div id="image-slider">
+        <img src="./공지사항_off.jpg" alt="Image 1">
+        <img src="./공지사항_on.jpg" alt="Image 2">
+        <img src="./마이뮤직_off.jpg" alt="Image 3">
+        <img src="./매거진_off.jpg" alt="Image 4">
+        <img src="./멜론TV_off.jpg" alt="Image 5">
+    </div>
+
+    <script>
+        const slider = document.getElementById('image-slider');
+        const images = slider.getElementsByTagName('img');
+        const numImages = images.length;
+        let currentIndex = 0;
+
+        function slideImage() {
+            const currentImage = images[currentIndex];
+            const nextIndex = (currentIndex + 1) % numImages;
+            const nextImage = images[nextIndex];
+
+            currentImage.style.transform = 'translateX(-100%)';
+            nextImage.style.transform = 'translateX(0)';
+
+            currentIndex = nextIndex;
+        }
+
+        slider.addEventListener('click', slideImage);
+    </script>
+</body>
+</html>
+

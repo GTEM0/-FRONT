@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let search = ["케이 디지털", "너무 어렵다", "완주할 수 있을까", "복습 철저히","오늘도"];
+
+        //저장하기, 한개로 저장
+
+        //Array -> 하나의 문자열로 바꿈
+        let result = JSON.stringify(search);
+        console.log(search);
+        console.log(result);
+       
+        //배열을 문자열로 바뀐 모양 확인 함
+        let str = ["케이 디지털", "너무 어렵다", "완주할 수 있을까", "복습 철저히","오늘도"]  ;
+        localStorage.setItem("searchs", result);
+      
+        //꺼내기 
+        let sSearchs = localStorage.getItem("searchs");
+        alert("sfasdfasf"+sSearchs);
+
+        let oSearchs = JSON.parse(sSearchs);
+        console.log(oSearchs);
+        
+
+
+
+    </script>
+    
+</body>
+</html>

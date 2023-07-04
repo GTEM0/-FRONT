@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--splice는 자기가 삭제한 것을 배열로 리턴한다-->
+    <script>
+//1번
+        let arr = ["one","two","three","four","five"];
+        let result = arr.splice(0,1);    //0번째 index에서 1개 삭제
+                            //arr배열 줄어듬
+                            //삭제된 내용을 배열로 반환함
+
+        let resultStr = result[0];
+        console.log(arr);
+        console.log(result);
+        console.log(resultStr);
+
+
+
+//2번 - 1번의 두줄을 2번의 한줄로 만들었다
+        let arr2 = ["one","two","three","four","five"];
+        let result2 = arr.splice(1,1)[0];
+        console.log(arr2);
+        console.log(result2);
+    </script>
+    
+</body>
+</html>

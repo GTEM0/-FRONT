@@ -32,7 +32,6 @@
         //arr.forEach(콜백함수);        // 이름 있는거, 이름 없는거
         arr.forEach(function(item, a){  // 배열요소값, 배열이 index(첨자)
             alert(item + "" + a);
-
         });  
 
 
@@ -54,7 +53,11 @@
         function func1(  a, b){    // 배열의 요소의 내용, 배열의 첨자
             alert( a + "  " +  b);
         }
-        
+
+
+        arr.forEach(function(z,x){  // 2개 매개변수
+            alert(z+ "" + x);
+        })
     </script>
 
 

@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      
+        /*-------------- 헤더 부분---------------*/
+        /* .divhr2{
+            height: 10px;
+            border-top: 10px solid black;
+            position: absolute;
+            top: 30px;
+        } */
+        .dy_hr1 {
+            margin-top: -8px;
+        }
+
+        .dy_header_main {
+            width: 1048px;
+            height: 10px;
+            /*             border: 1px solid black; */
+            margin: 0 auto;
+            padding: 5px;
+        }
+
+        .dy_header_main_2 {
+            width: 1048px;
+            height: 150px;
+            /*             border: 1px solid black; */
+            margin: 0 auto;
+            padding: 5px;
+
+        }
+
+        .dy_header_1 {
+            width: 1008px;
+            height: 38px;
+            display: flex;
+            /*             border: 1px solid black; */
+            margin: 0 auto;
+            padding: 0px;
+            position: relative;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dy_menu {
+            width: 1008px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            display: block;
+            position: relative;
+            z-index: 14;
+        }
+
+        .dy_menu>ul {
+            margin-top: -25px;
+            display: block;
+            list-style: none;
+        }
+
+        /* .menu>ul{           display: block;        } */
+        .dy_li_0 {
+            margin-left: -50px;
+            float: left;
+        }
+
+        .dy_li_1_1 {
+            margin-top: 4px;
+            margin-left: 548px;
+            float: left;
+        }
+
+        .dy_li_1 {
+            margin-left: -35px;
+            float: left;
+        }
+
+        .dy_li_2 {
+            margin-left: -25px;
+            float: left;
+        }
+
+        .dy_li_3 {
+            margin-left: -30px;
+            float: left;
+        }
+
+        .dy_li_4 {
+            margin-left: -30px;
+            float: left;
+        }
+
+        ul>li {
+            margin: 0 7px 0 0;
+            padding-left: 9px;
+        }
+
+        .dy_header_2 {
+            /*             border: 1px solid black; */
+            width: 1008px;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .dy_search_bar {
+            display: inline;
+            position: relative;
+            float: left;
+            width: 322px !important;
+            height: 40px;
+            margin: 36px 0 0 11px;
+            background: url(//cdnimg.melon.co.kr/resource/image/web/common/bg_cmn_search322.png) no-repeat;
+            z-index: 15;
+            display: flex;
+            align-items: center;
+            border-radius: 50px;
+            justify-content: center;
+        }
+
+        .dy_text1 {
+            float: left;
+            border: 0;
+            padding-top: 3px;
+            margin: 0px 0 0 -0px;
+            padding-left: 0;
+            height: 20px;
+            box-shadow: none;
+            font-size: 12px;
+            line-height: 20px;
+            margin-top: 1px;
+        }
+
+        .dy_dotbogi1 {
+            margin-left: 10px;
+            margin-top: 5px;
+            overflow: clip;
+            width: 28px;
+        }
+
+        .dy_sudden_up_img {
+            width: 42px;
+            height: 16px;
+            float: left;
+            margin: 3px 0 0 3px;
+            background: url(//cdnimg.melon.co.kr/resource/image/web/main/bg_loce_151207.png) no-repeat left top;
+            margin-top: 46.5px;
+            margin-left: 14px;
+        }
+
+        .dy_header_3 {
+            width: 1008px;
+            /*             border: 1px solid black; */
+            margin: 0 auto;
+            position: relative;
+            height: 55px;
+            z-index: 14;
+        }
+
+        .dy_header_3>ul {
+            margin-left: -43.5px;
+            display: block;
+            list-style: none;
+        }
+
+        .dy_li1 {
+            margin-left: -10px;
+            float: left;
+        }
+
+        .dy_li2 {
+            margin-left: -20px;
+            float: left;
+        }
+
+        .dy_li3 {
+            margin-left: -20px;
+            float: left;
+        }
+
+        .dy_li4 {
+            margin-left: -25px;
+            float: left;
+        }
+
+        .dy_li5 {
+            margin-left: -30px;
+            float: left;
+        }
+
+        .dy_li6 {
+            margin-left: -25px;
+            float: left;
+        }
+
+        .dy_li7 {
+            margin-left: -25px;
+            float: left;
+        }
+
+        .dy_li8 {
+            margin-left: -25px;
+            float: left;
+        }
+
+        .dy_li9 {
+            margin-left: -25px;
+            float: left;
+        }
+
+        .dy_li10 {
+            float: left;
+            margin-left: 210px;
+            float: left;
+        }
+
+        /*--------------실시간순위 애니메이트 부분---------------*/
+        .dy_rank_menu {
+            list-style: none;
+            display: flex;
+
+        }
+
+        .dy_rank_menu_item {
+            /* border: 1px solid black; */
+            width: 100px;
+            height: 10px;
+            margin-left: -60px;
+            text-align: center;
+            line-height: 26px;
+        }
+
+        .dy_rank_menu_item>ul {
+            display: none;
+        }
+
+        .dy_rank_sub_menu {
+            display: none;
+            list-style: none;
+            margin-left: 0px;
+        }
+
+        .dy_rank_sub_menu>li {
+            float: left;
+            margin-left: -25px;
+        }
+
+        .dy_rank_menu_item:hover .dy_rank_sub_menu {
+            display: block;
+            width: 120px;
+            height: 270px;
+            background-color: #fff;
+            position: relative;
+            z-index: 9999;
+            border: 1px solid black;
+            margin-top: -40px;
+            padding-top: 10px;
+        }
+
+        .dy_auto_awards_div {
+            width: 160px;
+            height: 110px;
+            position: absolute;
+            border: 1px solid black;
+            margin-left: 550px;
+            overflow: hidden;
+            max-height: 20px;
+            margin-top: 5
+        }
+    </style>
+
+
+
+    
+
+    <style>
+        .dy_footer_wrap1 {
+            width: 1048px;
+            height: 52px;
+            /* border: 1px solid black; */
+            margin: 0 auto;
+        }
+
+        .dy_footer_1st {
+            width: 1008px;
+            height: 52px;
+            /* border: 1px solid black; */
+            margin: 0 auto;
+        }
+
+        .dy_footer_1st_menu {
+            list-style: none;
+            display: flex;
+            margin-left: 450px;
+            /* border: 1px solid black; */
+
+        }
+
+        .dy_footer_1st_menu>li {
+            color: #7d7d7d;
+        }
+
+        .dy_footer_wrap2 {
+            width: 1048px;
+            height: 145px;
+            /* border: 1px solid black; */
+            margin: 0 auto;
+        }
+
+        .dy_footer_2nd {
+            width: 1008px;
+            height: 65px;
+            /* border: 1px solid black; */
+            margin: 0 auto;
+
+        }
+
+        .dy_footer_2nd_menu {
+            height: 20px;
+            width: 820px;
+            list-style: none;
+            display: flex;
+            /* border: 1px solid black; */
+            margin-left: -45px;
+            justify-content: space-between;
+        }
+
+        .dy_footer_2nd_menu_list {
+            font-size: 12px;
+            margin-left: 0px;
+            color: #505050;
+
+        }
+
+        .dy_footer_2nd_menu_list:hover {
+            text-decoration-line: underline;
+        }
+
+        .dy_footer_2nd_menu>img {
+            margin-top: 2px;
+        }
+
+        .dy_footer_3rd {
+            width: 1008px;
+            height: 80px;
+            /* border: 1px solid black; */
+            margin: 0 auto;
+            list-style: none;
+        }
+
+        .dy_keyword_overlay {
+            position: absolute;
+            margin-left: 510px;
+        }
+    </style>
+    <style>
+      /* div {
+        outline: 1px solid gray;
+      } */
+      header {
+        border-bottom: 1px solid gray;
+        height: 192px;
+      }
+      .bj_a {
+        text-decoration: none;
+      }
+
+      .div1_wrap {
+        width: 1008px;
+        height: 2000px;
+        margin: 0px auto;
+        padding: 20px;
+        padding-top: 30px;
+      }
+      .div1 {
+        height: 800px;
+        display: flex;
+      }
+      .div1_album_box {
+        width: 476px;
+        height: 340px;
+      }
+      .div1_album_image {
+        height: 316px;
+        margin-top: 24px;
+      }
+      .bj_ul {
+        list-style: none;
+        display: flex;
+        margin: 2px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+      }
+      .bj_li {
+        height: 156px;
+        width: 156px;
+        border: 1px solid black;
+        border: 1px solid rgb(224, 224, 224);
+        position: relative;
+      }
+      .bj_li_center {
+        margin: 0px 2px;
+      }
+      .bj_li_name {
+        position: absolute;
+        bottom: 0px;
+        height: 22px;
+        width: 100%;
+        padding-top: 8px;
+        line-height: 14px;
+        background-color: rgb(0, 0, 0, 0.7);
+        text-align: center;
+        font-size: 12px;
+        overflow: hidden;
+      }
+      .bj_li_a {
+        color: white;
+        text-decoration: none;
+      }
+      .bj_li_a:hover {
+        text-decoration-line: underline;
+      }
+      .bj_li_cover {
+        height: 126px;
+        transition: background-color 0.3s;
+        position: relative;
+      }
+      .bj_li_cover_text {
+        height: 35px;
+        line-height: 10px;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        padding-top: 63px;
+        display: none;
+      }
+      .bj_li_cover_play {
+        height: 42px;
+        width: 42px;
+        position: absolute;
+        right: 7px;
+        bottom: 7px;
+        background-image: url("https://github.com/kevinbj0/front/blob/main/image_/%EC%9E%AC%EC%83%9D_%ED%9A%8C%EC%83%89.png?raw=true");
+        background-size: cover;
+        display: none;
+      }
+      .bj_li_cover_play:hover {
+        background-image: url("https://github.com/kevinbj0/front/blob/main/image_/%EC%9E%AC%EC%83%9D_%EA%B7%B8%EB%A6%B0.png?raw=true");
+      }
+      .bj_li_cover:hover {
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      .bj_li_cover:hover .bj_li_cover_text {
+        display: block;
+      }
+
+      .div1_event_box {
+        width: 236px;
+        height: 340px;
+        margin: 0px 8px;
+        position: relative;
+      }
+      /* 이벤트 슬라이드 자리
+       */
+      .div1_container {
+        margin-top: 24px;
+        overflow: hidden;
+        display: flex;
+      }
+      .div1_event_image {
+        height: 316px;
+        width: 236px;
+        background-size: cover;
+        transition: 0.7s;
+        /* transform: translateX(-100px); */
+      }
+      .div1_login_box {
+        width: 280px;
+        height: 340px;
+      }
+      .div1_login {
+        width: 246px;
+        height: 117px;
+        margin-top: 24px;
+        padding: 0px 17px;
+        background-color: rgb(251, 251, 251);
+        outline: 1px solid rgb(224, 224, 224);
+      }
+      .div1_login_top {
+        height: 49px;
+        position: relative;
+      }
+      .div1_login_text {
+        height: 18px;
+        width: 246px;
+        position: absolute;
+        bottom: 5px;
+        line-height: 18px;
+        font-size: 11px;
+        color: gray;
+      }
+      .div1_login_add {
+        position: absolute;
+        right: 0px;
+        text-decoration: none;
+        color: gray;
+      }
+      .div1_login_add:hover {
+        text-decoration-line: underline;
+      }
+
+      .div1_login_button {
+        height: 42px;
+        color: white;
+        background-color: rgb(0, 211, 68);
+        text-align: center;
+        line-height: 42px;
+        font-size: 14px;
+      }
+      .div1_login_button:hover {
+        background-color: rgb(1, 185, 37);
+      }
+      .div1_event_mini {
+        width: 280px;
+        height: 188px;
+        margin-top: 11px;
+        background-image: url("https://cdnimg.melon.co.kr/svc/images/main/imgUrl20230619042826.png/melon/quality/80");
+        background-size: cover;
+      }
+      /* 작업중 */
+      .bj_event_slide {
+        height: 15px;
+        width: 113px;
+        display: flex;
+        position: absolute;
+        right: 2px;
+        top: 1px;
+      }
+      .bj_event_slide_button {
+        height: 10px;
+        width: 10px;
+        margin-right: 3px;
+        background-image: url("https://github.com/kevinbj0/front/blob/main/image_/%EC%9B%90_%EC%9D%BC%EB%B0%98.png?raw=true");
+        background-size: cover;
+      }
+      .bj_event_slide_button:hover {
+        background-image: url("https://github.com/kevinbj0/front/blob/main/image_/%EC%9B%90_%EC%84%A0%ED%83%9D.png?raw=true");
+      }
+      .bj_event_slide_stop {
+        width: 13px;
+        height: 13px;
+        margin-left: 8px;
+        margin-top: 1px;
+        border-radius: 50%;
+        outline: 1px solid rgb(218, 218, 218);
+      }
+      .bj_event_slide_stop:hover {
+        outline: 1px solid rgb(171, 171, 171);
+      }
+      .bj_stop_image {
+        height: 8px;
+        width: 8px;
+        margin: 2.5px auto;
+        /* background-image: url("https://github.com/kevinbj0/front/blob/main/image_/Play.png?raw=true"); */
+        background-image: url("https://github.com/kevinbj0/front/blob/main/image_/STOP.png?raw=true");
+        background-size: cover;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    
+ <hr width="100%;" class="dy_hr1" color="#04c944" size="4px">
+ <div class="dy_header_main">
+
+     <div class="dy_header_1">
+         <div class="dy_menu">
+
+             <ul>
+
+                 <li class="dy_li_0"><a href="https://ticket.melon.com/main/index.htm">
+                         <img src="./멜론티켓_off.jpg" onmouseover="this.src='./멜론티켓_on.jpg'"
+                             onmouseout="this.src='./멜론티켓_off.jpg'" style="width:77%; height:77%;"></a></li>
+                 <li class="dy_li_1_1"><a href="https://www.melon.com/commerce/pamphlet/web/sale_listMainView.htm">
+                         <img src="./이용권이미지.PNG" style="width:55%; height:55%;"></a></li>
+                 <li class="dy_li_1"><a href="https://www.melon.com/commerce/pamphlet/web/sale_listMainView.htm">
+                         <img src="./이용권구매_off.jpg" onmouseover="this.src='./이용권구매_on.jpg'"
+                             onmouseout="this.src='./이용권구매_off.jpg'" style="width:75%; height:75%;"></a></li>
+                 <li class="dy_li_2"><a href="https://www.melon.com/event/vip/index.htm">
+                         <img src="./멜론라운지_off.jpg" onmouseover="this.src='./멜론라운지_on.jpg'"
+                             onmouseout="this.src='./멜론라운지_off.jpg'" style="width:75%; height:75%;"></a></li>
+                 <li class="dy_li_3"><a href="https://www.melon.com/event/index.htm">
+                         <img src="./이벤트_off.jpg" onmouseover="this.src='./이벤트_on.jpg'"
+                             onmouseout="this.src='./이벤트_off.jpg'" style="width:75%; height:75%;"></a></li>
+                 <li class="dy_li_4"><a href="https://www.melon.com/customer/announce/index.htm">
+                         <img src="./공지사항_off.jpg" onmouseover="this.src='./공지사항_on.jpg'"
+                             onmouseout="this.src='./공지사항_off.jpg'" style="width:75%; height:75%;"></a></li>
+
+             </ul>
+         </div>
+     </div>
+ </div>
+ <hr width="100%;" color="#f4f4f4" size="1px">
+ <div class="dy_header_main_2">
+     <div class="dy_header_2">
+         <div class="dy_melonimg">
+             <a
+                 href="http://127.0.0.1:5500/%EB%A9%9C%EB%A1%A0%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/%EB%A9%9C%EB%A1%A0%ED%97%A4%EB%8D%94.html"><img
+                     src="https://cdnimg.melon.co.kr/resource/image/web/common/logo_melon142x99.png"></a>
+         </div>
+
+         <div class="dy_search_bar">
+             <input class="dy_text1" type="search" placeholder="[금주의 차트] 한눈에 보는 주간 차트 리뷰"
+                 onfocus="this.placeholder=''" onblur="this.placeholder='[금주의 차트] 한눈에 보는 주간 차트 리뷰'" name="search"
+                 style="width: 249px; display:block;">
+
+             <div class="dy_dotbogi">
+                 <img class="dy_dotbogi1" src="./멜론돋보기.PNG">
+             </div>
+
+         </div>
+
+         <div class="dy_sudden_up_img">
+         </div>
+
+         <div class="dy_auto_awards_div">
+             <div class="dy_auto_awards" style="margin-top: 25.5px; margin-left: 15px;">
+
+                 <!---------------- 실시간순위 애니메이트 시작 부분 ----------------->
+                 <ul class="dy_rank_menu">
+
+                     <li class="dy_rank_menu_item" style="font-size:12px;">&nbsp;&nbsp;1 Charlie Puth
+                         <ul class="dy_rank_sub_menu">
+
+                             <li style="margin-left: -41px;">&nbsp;&nbsp;1 Charlie Puth</li><br>
+                             <li style="margin-left: -41px;">&nbsp;&nbsp;2 자장가</li><br>
+                             <li style="margin-left: -41px;">&nbsp;&nbsp;3 빈지노(Been···</li><br>
+                             <li style="margin-left: -41px;">&nbsp;&nbsp;4 잔나비</li><br>
+                             <li style="margin-left: -41px;">&nbsp;&nbsp;5 이솔로몬</li><br>
+                             <li style="margin-left: -41px;">&nbsp;&nbsp;6 PONY</li><br>
+                             <li style="margin-left: -41px;">&nbsp;&nbsp;7 쿨(COOL)</li><br>
+                             <li style="margin-left: -41px;">&nbsp;&nbsp;8 IVE(아이브)</li><br>
+                             <li style="margin-left: -41px;">&nbsp;&nbsp;9 NewJeans</li><br>
+                             <li style="margin-left: -41px;">10 Bruno Mars</li><br>
+                         </ul>
+                     </li>
+                 </ul>
+                 <!---------------- 실시간순위 애니메이트 끝 부분 ----------------->
+             </div>
+         </div>
+
+         <div class="dy_keyword_overlay">
+             <ul class="dy_slide">
+                 <div class="dy_slide-item"> &nbsp;1. 별것아니야 </div>
+                 <div class="dy_slide-item"> &nbsp;2. 나의 외로움이···</div>
+                 <div class="dy_slide-item"> &nbsp;3. 빈지노(Beenzi···)</div>
+                 <div class="dy_slide-item"> &nbsp;4. 별거아니야</div>
+                 <div class="dy_slide-item"> &nbsp;5. 뽀로로</div>
+                 <div class="dy_slide-item"> &nbsp;6. 지아</div>
+                 <div class="dy_slide-item"> &nbsp;7. Heaven</div>
+                 <div class="dy_slide-item"> &nbsp;8. 몬스타엑스</div>
+                 <div class="dy_slide-item"> &nbsp;9. 내 이름 아시죠</div>
+                 <div class="dy_slide-item">10. 장필순</div>
+             </ul>
+         </div>
+     </div>
+
+     <div class="dy_header_3">
+         <ul>
+             <li class="dy_li1"><a href="https://www.melon.com/chart/index.htm"><img src="./멜론차트_off.jpg"
+                         onmouseover="this.src='./멜론차트_on.jpg'" onmouseout="this.src='./멜론차트_off.jpg'"></a></li>
+             <li class="dy_li2"><a href="https://www.melon.com/new/index.htm"><img src="./최신음악_off.jpg"
+                         onmouseover="this.src='./최신음악_on.jpg'" onmouseout="this.src='./최신음악_off.jpg'"></a></li>
+             <li class="dy_li3"><a href="https://www.melon.com/genre/song_list.htm"><img src="./장르음악_off.jpg"
+                         onmouseover="this.src='./장르음악_on.jpg'" onmouseout="this.src='./장르음악_off.jpg'"></a></li>
+             <li class="dy_li4"><a href="https://www.melon.com/dj/today/djtoday_list.htm"><img src="./멜론DJ_off.jpg"
+                         onmouseover="this.src='./멜론DJ_on.jpg'" onmouseout="this.src='./멜론DJ_off.jpg'"></a></li>
+             <li class="dy_li5"><a href="https://www.melon.com/tv/index.htm"><img src="./멜론TV_off.jpg"
+                         onmouseover="this.src='./멜론TV_on.jpg'" onmouseout="this.src='./멜론TV_off.jpg'"></a></li>
+             <li class="dy_li6"><a href="https://www.melon.com/artistplus/todayupdate/index.htm"><img
+                         src="./스타포스트_off.jpg" onmouseover="this.src='./스타포스트_on.jpg'"
+                         onmouseout="this.src='./스타포스트_off.jpg'"></a></li>
+             <li class="dy_li7"><a href="https://www.melon.com/musicstory/today/index.htm"><img src="./매거진_off.jpg"
+                         onmouseover="this.src='./매거진_on.jpg'" onmouseout="this.src='./매거진_off.jpg'"></a></li>
+             <li class="dy_li8"><a href="https://www.melon.com/melonaward/weekAward.htm"><img src="./뮤직어워드_off.jpg"
+                         onmouseover="this.src='./뮤직어워드_on.jpg'" onmouseout="this.src='./뮤직어워드_off.jpg'"></a></li>
+             <li class="dy_li9"><a href="https://www.melon.com/edu/index.htm"><img src="./어학_off.jpg"
+                         onmouseover="this.src='./어학_on.jpg'" onmouseout="this.src='./어학_off.jpg'"></a></li>
+         </ul>
+         <ul>
+             <li class="dy_li10"><a href="로그인페이지"><img src="./마이뮤직_off.jpg" onmouseover="this.src='./마이뮤직_on.jpg'"
+                         onmouseout="this.src='./마이뮤직_off.jpg'"></a></li>
+         </ul>
+     </div>
+ </div>
+ <hr width="100%;" color="#c3c3c3">
+
+
+    <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡdiv1 STARTㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    <div class="div1_wrap">
+      <!-- div1 -->
+      <div class="div1">
+        <!-- div1 앨범 SECTION -->
+        <div class="div1_album_box">
+          <div class="div1_album_image">
+            <ul class="bj_ul">
+              <!-- 앨범 Image 1 -->
+              <li
+                class="bj_li"
+                style="
+                  background-image: url('https://cdnimg.melon.co.kr/cm2/album/images/112/78/026/11278026_20230703165432_500.jpg/melon/quality/80/resize/156/optimize');
+                "
+              >
+                <div class="bj_li_name">
+                  <a href="" class="bj_li_a">틴탑</a>
+                </div>
+                <div
+                  class="bj_li_cover"
+                  tabindex="0"
+                  onmouseover="bj_cover_in(0)"
+                  onmouseout="bj_cover_out(0)"
+                >
+                  <div class="bj_li_cover_text">
+                    <a href="" class="bj_li_a"><strong>4SHO</strong></a
+                    ><br /><br />
+                    <a href="" class="bj_li_a">틴탑</a>
+                  </div>
+                  <div class="bj_li_cover_play"></div>
+                </div>
+              </li>
+              <!-- 앨범 Image 2 -->
+              <li
+                class="bj_li_center bj_li"
+                style="
+                  background-image: url('https://cdnimg.melon.co.kr/cm2/album/images/112/77/698/11277698_20230703131244_500.jpg/melon/quality/80/resize/156/optimize');
+                "
+              >
+                <div class="bj_li_name">
+                  <a href="" class="bj_li_a">NMIXX</a>
+                </div>
+                <div
+                  class="bj_li_cover"
+                  tabindex="0"
+                  onmouseover="bj_cover_in(1)"
+                  onmouseout="bj_cover_out(1)"
+                >
+                  <div class="bj_li_cover_text">
+                    <a href="" class="bj_li_a"
+                      ><strong>Roller Coaster</strong></a
+                    ><br /><br />
+                    <a href="" class="bj_li_a">NMIXX</a>
+                  </div>
+                  <div class="bj_li_cover_play"></div>
+                </div>
+              </li>
+              <!-- 앨범 Image 3 -->
+              <li
+                class="bj_li"
+                style="
+                  background-image: url('https://cdnimg.melon.co.kr/cm2/album/images/112/78/316/11278316_20230704103646_500.jpg/melon/quality/80/resize/156/optimize');
+                "
+              >
+                <div class="bj_li_name">
+                  <a href="" class="bj_li_a">허준</a>
+                </div>
+                <div
+                  class="bj_li_cover"
+                  tabindex="0"
+                  onmouseover="bj_cover_in(2)"
+                  onmouseout="bj_cover_out(2)"
+                >
+                  <div class="bj_li_cover_text">
+                    <a href="" class="bj_li_a"
+                      ><strong>세번째 남는 시간</strong></a
+                    ><br /><br />
+                    <a href="" class="bj_li_a">허준</a>
+                  </div>
+                  <div class="bj_li_cover_play"></div>
+                </div>
+              </li>
+            </ul>
+            <ul class="bj_ul">
+              <!-- 앨범 Image 4 -->
+              <li
+                class="bj_li"
+                style="
+                  background-image: url('https://cdnimg.melon.co.kr/cm2/album/images/112/76/570/11276570_20230629163647_500.jpg/melon/quality/80/resize/156/optimize');
+                "
+              >
+                <div class="bj_li_name">
+                  <a href="" class="bj_li_a">#안녕</a>
+                </div>
+                <div
+                  class="bj_li_cover"
+                  tabindex="0"
+                  onmouseover="bj_cover_in(3)"
+                  onmouseout="bj_cover_out(3)"
+                >
+                  <div class="bj_li_cover_text">
+                    <a href="" class="bj_li_a"
+                      ><strong>여긴 하루종일 비</strong></a
+                    ><br /><br />
+                    <a href="" class="bj_li_a">#안녕</a>
+                  </div>
+                  <div class="bj_li_cover_play"></div>
+                </div>
+              </li>
+              <!-- 앨범 Image 5 -->
+              <li
+                class="bj_li_center bj_li"
+                style="
+                  background-image: url('https://cdnimg.melon.co.kr/cm2/album/images/112/77/602/11277602_20230703105200_500.jpg/melon/quality/80/resize/156/optimize');
+                "
+              >
+                <div class="bj_li_name">
+                  <a href="" class="bj_li_a">허회경</a>
+                </div>
+                <div
+                  class="bj_li_cover"
+                  tabindex="0"
+                  onmouseover="bj_cover_in(4)"
+                  onmouseout="bj_cover_out(4)"
+                >
+                  <div class="bj_li_cover_text">
+                    <a href="" class="bj_li_a"
+                      ><strong>나와 내 이웃에게</strong></a
+                    ><br /><br />
+                    <a href="" class="bj_li_a">허회경</a>
+                  </div>
+                  <div class="bj_li_cover_play"></div>
+                </div>
+              </li>
+              <!-- 앨범 Image 6 -->
+              <li
+                class="bj_li"
+                style="
+                  background-image: url('https://cdnimg.melon.co.kr/cm2/album/images/112/77/167/11277167_20230630173046_500.jpg/melon/quality/80/resize/156/optimize');
+                "
+              >
+                <div class="bj_li_name">
+                  <a href="" class="bj_li_a">배다해</a>
+                </div>
+                <div
+                  class="bj_li_cover"
+                  tabindex="0"
+                  onmouseover="bj_cover_in(5)"
+                  onmouseout="bj_cover_out(5)"
+                >
+                  <div class="bj_li_cover_text">
+                    <a href="" class="bj_li_a"><strong>기묘한 밤</strong></a
+                    ><br /><br />
+                    <a href="" class="bj_li_a">배다해</a>
+                  </div>
+                  <div class="bj_li_cover_play"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- div1 앨범 SECTION END -->
+        <!-- div1 이벤트 SECTION -->
+        <div class="div1_event_box">
+          <div class="bj_event_slide">
+            <div class="bj_event_slide_button" onclick="click_event(0)"></div>
+            <div class="bj_event_slide_button" onclick="click_event(1)"></div>
+            <div class="bj_event_slide_button" onclick="click_event(2)"></div>
+            <div class="bj_event_slide_button" onclick="click_event(3)"></div>
+            <div class="bj_event_slide_button" onclick="click_event(4)"></div>
+            <div class="bj_event_slide_button" onclick="click_event(5)"></div>
+            <div class="bj_event_slide_button" onclick="click_event(6)"></div>
+            <div class="bj_event_slide_stop">
+              <div class="bj_stop_image"></div>
+            </div>
+          </div>
+          <div class="div1_container">
+            <a href="">
+              <div
+                class="div1_event_image"
+                style="
+                  background-image: url('https://cdnimg.melon.co.kr/svc/images/main/imgUrl20230628043101.png/melon/quality/80://cdnimg.melon.co.kr/svc/images/main/imgUrl20230629053044.jpg/melon/quality/80');
+                "
+              ></div>
+            </a>
+            <a href="">
+              <div
+                class="div1_event_image"
+                style="
+                  background-image: url('https://cdnimg.melon.co.kr/svc/images/main/imgUrl20230704031938.jpg/melon/quality/80');
+                "
+              ></div>
+            </a>
+            <a href="">
+              <div
+                class="div1_event_image"
+                style="
+                  background-image: url('https://cdnimg.melon.co.kr/svc/images/main/imgUrl20230703032524.jpg/melon/quality/80');
+                "
+              ></div>
+            </a>
+          </div>
+        </div>
+        <!-- 이벤트 부분 SECTION -->
+        <!-- div1 로그인 SECTION -->
+        <div class="div1_login_box">
+          <div class="div1_login">
+            <div class="div1_login_top">
+              <div class="div1_login_text">
+                멜론을 더 안전하게 이용하세요.
+                <a href="" class="div1_login_add">회원가입</a>
+              </div>
+            </div>
+            <a href="" class="bj_a"
+              ><div class="div1_login_button">로그인</div></a
+            >
+          </div>
+          <!-- 로그인 하단 이벤트 -->
+          <a href=""><div class="div1_event_mini"></div></a>
+        </div>
+      </div>
+      <!-- 로그인 SECTION END-->
+      <!-- div1 END-->
+    </div>
+    <!-- div1_wrap END-->
+    <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡdiv1 ENDㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    <script>
+      //ㅡㅡㅡㅡㅡㅡㅡㅡㅡ병진 scriptㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+      //마우스 올릴 때 사라지는 부분
+      let bj_name = document.querySelectorAll(".bj_li_name");
+      let bj_cover_play = document.querySelectorAll(".bj_li_cover_play");
+      function bj_cover_in(index) {
+        bj_name[index].style.display = "none";
+        bj_cover_play[index].style.display = "block";
+      }
+      function bj_cover_out(index) {
+        bj_name[index].style.display = "block";
+        bj_cover_play[index].style.display = "none";
+      }
+
+      //ㅡㅡㅡㅡㅡㅡㅡ이벤트 슬라이드 부분
+      let bj_event_container = document.querySelectorAll(".div1_event_image");
+      let bj_event_button = document.querySelectorAll(".bj_event_slide_button");
+      // 슬라이드 개수
+      let bj_event_Max = 2;
+      // 슬라이드 위치값 증가
+      let bj_event_position = 0;
+      // 현재 슬라이드 위치
+      let bj_event_play = 0;
+
+      function changeEvent() {
+        bj_event_position++;
+        bj_event_play = 236 * bj_event_position;
+        if (bj_event_position > bj_event_Max) {
+          bj_event_position = 0;
+          bj_event_play = 0;
+        }
+        for (let i = 0; i <= bj_event_Max; i++) {
+          bj_event_container[i].style.transform =
+            "translateX(-" + bj_event_play + "px)";
+          bj_event_button[i].style.backgroundImage =
+            "url('https://github.com/kevinbj0/front/blob/main/image_/%EC%9B%90_%EC%9D%BC%EB%B0%98.png?raw=true')";
+        }
+        bj_event_button[bj_event_position].style.backgroundImage =
+          "url('https://github.com/kevinbj0/front/blob/main/image_/%EC%9B%90_%EC%84%A0%ED%83%9D.png?raw=true')";
+      }
+      function click_event(index) {
+        bj_event_position = index;
+        bj_event_play = 236 * bj_event_position;
+        for (let i = 0; i <= bj_event_Max; i++) {
+          bj_event_container[i].style.transform =
+            "translateX(-" + bj_event_play + "px)";
+          bj_event_button[i].style.backgroundImage =
+            "url('https://github.com/kevinbj0/front/blob/main/image_/%EC%9B%90_%EC%9D%BC%EB%B0%98.png?raw=true')";
+        }
+        bj_event_button[bj_event_position].style.backgroundImage =
+          "url('https://github.com/kevinbj0/front/blob/main/image_/%EC%9B%90_%EC%84%A0%ED%83%9D.png?raw=true')";
+      }
+      setInterval(changeEvent, 4000);
+    </script>
+
+ 
+
+</body>
+
+<body>
+ <hr width="100%;">
+ <div class="dy_footer_wrap">
+
+     <div class="dy_footer_1st">
+         <ul class="dy_footer_1st_menu">
+             <li class="dy_li1_footer"><a href="https://www.melon.com/m6/campaign.htm"><img
+                         style="height:19px; width:99px;" src="./멜론_off.jpg" onmouseover="this.src='./멜론_on.jpg'"
+                         onmouseout="this.src='./멜론_off.jpg'"></a></li>
+
+             <li class="dy_li2_footer"><a href="https://studio.melon.com/"><img style="height:19px; width:76px;"
+                         src="./맥플레이어_off.jpg" onmouseover="this.src='./맥플레이어_on.jpg'"
+                         onmouseout="this.src='./맥플레이어_off.jpg'"></a></li>
+
+             <li class="dy_li3_footer"><a href="https://www.melon.com/customer/serviceintro/index.htm"><img
+                         style="height:19px; width:107px;" src="./윈도우즈플레이어_off.jpg"
+                         onmouseover="this.src='./윈도우즈플레이어_on.jpg'" onmouseout="this.src='./윈도우즈플레이어_off.jpg'"></a>
+             </li>
+
+             <li class="dy_li4_footer"><a href="https://www.melon.com/customer/serviceintro/multi_pc_web.htm"><img
+                         style="height:19px; width:76px;" src="./맥플레이어_off.jpg"
+                         onmouseover="this.src='.맥플레이어_on.jpg'" onmouseout="this.src='./맥플레이어_off.jpg'"></a></li>
+
+             <li class="dy_li5_footer"><a href="https://www.melon.com/customer/serviceintro/ipad.htm"><img
+                         style="height:19px; width:27px;" src="./ipad_off.jpg" onmouseover="this.src='./ipad_on.jpg'"
+                         onmouseout="this.src='./ipad_off.jpg'"></a></li>
+
+             <li class="dy_li6_footer"><a href="https://faqs2.melon.com/customer/index.htm"><img
+                         style="height:19px; width:49px;" src="./고객센터_off.jpg" onmouseover="this.src='./고객센터_on.jpg'"
+                         onmouseout="this.src='./고객센터_off.jpg'"></a></li>
+         </ul>
+     </div>
+
+ </div>
+ <hr width="100%;" color="#efefef">
+ <div class="dy_footer_wrap">
+
+     <div class="dy_footer_2nd">
+         <ul class="dy_footer_2nd_menu">
+             <li class="dy_footer_2nd_menu_list"><a style="text-decoration: none; color:inherit"
+                     href="https://info.melon.com/terms/web/terms1_1.html">이용약관</a></li>
+             <img src="./글자사이막대기.png" style="height:14px; text-decoration-line: none;">
+
+             <li class="dy_footer_2nd_menu_list"><a style="text-decoration: none; color:inherit"
+                     href="https://info.melon.com/terms/web/terms1_3.html"><strong>위치기반서비스 이용약관</strong></a></li>
+             <img src="./글자사이막대기.png" style="height:14px; text-decoration-line: none;">
+
+             <li class="dy_footer_2nd_menu_list"><a style="text-decoration: none; color:inherit"
+                     href="https://info.melon.com/terms/web/terms3.html"><strong>개인정보처리방침</strong></a></li>
+             <img src="./글자사이막대기.png" style="height:14px; text-decoration-line: none;">
+
+             <li class="dy_footer_2nd_menu_list"><a style="text-decoration: none; color:inherit"
+                     href="https://info.melon.com/terms/web/terms5_1.html">청소년보호정책</a></li>
+             <img src="./글자사이막대기.png" style="height:14px; text-decoration-line: none;">
+
+             <li class="dy_footer_2nd_menu_list"><a style="text-decoration: none; color:inherit"
+                     href="https://faqs2.melon.com/customer/faq/informFaq.htm?no=1&faqId=QUES20140616000001&SEARCH_KEY=&SEARCH_PAR_CATEGORY=CATE20130909000006&SEARCH_CATEGORY=CATE20130909000021">제휴/프로모션문의</a>
+             </li>
+             <img src="./글자사이막대기.png" style="height:14px; text-decoration-line: none;">
+
+             <li class="dy_footer_2nd_menu_list"><a style="text-decoration: none; color:inherit"
+                     href="https://www.melon.com/emailCollectionReject.html">이메일주소무단수집거부</a></li>
+             <img src="./글자사이막대기.png" style="height:14px; text-decoration-line: none;">
+
+             <li class="dy_footer_2nd_menu_list"><a style="text-decoration: none; color:inherit"
+                     href="https://partner.melon.com/partrct/login/web/login_loginProcess.htm?t=s">파트너센터</a></li>
+
+         </ul>
+     </div>
+
+     <div class="dy_footer_3rd">
+         <li style="font-size: 11px; color:#909090;"><strong>(주)카카오엔터테인먼트</strong> 경기도 성남시 분당구 판교역로 221 &nbsp;|&nbsp;
+             대표이사 : 이진수, 김성수 &nbsp;|&nbsp; 사업자등록번호 : 220-88-02594 &nbsp;|&nbsp; 통신판매업신고번호 : 2018-성남분당B-0004
+             사업자정보확인><br>
+             문의전화 : 1566-7727 (평일 09:00-18:00, 유료) &nbsp;|&nbsp; 이메일 : melon_info@kakaoent.com &nbsp;|&nbsp;
+             호스팅서비스사업자 : (주)카카오엔터테인먼트 &nbsp;|&nbsp; © Kakao Entertainment Corp.</li>
+     </div>
+ </div>
+
+
+
+ <script>
+     let slide = document.querySelector('.dy_slide')
+     let currentTranslate = 0;
+     let loopInterval = setInterval(() => {
+         currentTranslate -= (14);
+         slide.style.transform = `translateY(${currentTranslate}px)`; // 다음 슬라이드를 보여주는 함수
+     }, 1000,);
+
+ </script>
+
+  </body>
+</html>

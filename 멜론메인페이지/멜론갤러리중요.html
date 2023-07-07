@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .slide{
+            width: 170px;
+            height: 20px;
+            border: 1px solid black;
+        }
+    </style>
+
+    <script>
+         let message=[ "1 IVE (아이브)" ,"2 (여자)아이들", "3 방탄소년단" ,"4 정승환", "5 10CM","6 멜로망스","7 Red Velvet (레드벨벳)","8 IDOL","9 틴탑","10 LUCY"] ;
+         let index =0; 
+   
+
+         function nextGallery(){
+             let slide  = document.querySelector(".slide");
+             index++;
+             if( index >= message.length)   {   //  0  1  2   3  
+                index=0;
+             }
+             slide.innerHTML = message[index];
+
+             slide.animate( {
+                    transform: [                          /* transform   translate 위치 이동 */
+                    'translateY(100%)',    //시작
+                    'translateY()'     //도착
+                    ]
+                 },
+                 {
+                     duration:1000               // 위의효과가 1초간 지속되도록
+                 }); 
+            
+
+         }
+    
+         setInterval( nextGallery ,  2000 );
+
+    </script>
+</head>
+
+<body>
+
+
+
+    <div class="gallery-wrap">
+        <div class="slide">    
+            1 IVE (아이브)   
+        </div>
+    </div>
+
+</body>
+
+</html>

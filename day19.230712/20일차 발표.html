@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> JavaScript는 이벤트 처리를 통해 웹 페이지에서 발생하는 사용자의 동작이나 시스템 이벤트에 대한 반응을 정의할 수 있습니다. 이벤트 처리는 웹 페이지의 상호작용성을 높이고 사용자 경험을 개선하는 데 중요한 역할을 합니다.
+
+    간단한 예를 들어보겠습니다. 웹 페이지에 버튼이 있다고 가정해봅시다. 이 버튼을 클릭하면 메시지가 나타나는 기능을 추가하고 싶을 때 JavaScript의 이벤트 처리를 사용할 수 있습니다.</h2>
+
+    <h2>HTML 요소에 이벤트 핸들러 추가하기:</h2>
+    <button id="myButton">클릭하세요</button>
+<div id="message"></div>
+<h2>JavaScript에서 이벤트 핸들러 함수 정의하기:</h2>
+<button id="myButton">클릭하세요</button>
+<div id="message"></div>
+<script>
+    /* JavaScript에서 이벤트 핸들러 함수와 HTML 요소를 연결하기: */
+    var buttonElement = document.getElementById('myButton');
+buttonElement.addEventListener('click', showMessage);
+/* 위의 코드를 통해 버튼이 클릭되면 showMessage() 함수가 실행되어 '버튼이 클릭되었습니다!'라는 메시지가 표시됩니다. 이벤트 처리를 통해 웹 페이지의 요소들에 반응을 추가할 수 있으며, 클릭 외에도 마우스 이벤트, 키보드 이벤트, 폼 제출 등 다양한 이벤트를 처리할 수 있습니다.
+
+이벤트 처리는 JavaScript에서 가장 많이 사용되는 기능 중 하나이며, 웹 페이지를 더욱 동적이고 상호작용적으로 만들 수 있도록 도와줍니다. */
+</script>
+    
+</body>
+</html>

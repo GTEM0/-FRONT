@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
     <script>
-        let n1=1
-        let n2=1
-        let cnt=2
 
-        while(cnt<=50){
-            n3=n1+n2;
+        /* 기억장소 3개 */
+
+        let n1 = 1
+        let n2 = 1
+        let cnt = 2
+        let n3;
+
+        while (cnt <= 50) {
+            n3 = n1 + n2;
             alert(n3);
-            n1=n2;
-            n2=n3;
+            n1 = n2;
+            n2 = n3;
             cnt++;
             console.log(n3);
         }
+
+        /* 기억장소 2개 */
+
+        let i1 = 1;
+        let i2 = 1;
+        let cnt0 = 2
+
+        while (cnt <= 50) {
+            alert(i1 + i2);
+            i2 = i1 + i2;
+            i1 = i2 - i1;
+            cnt++;
+        }
+
     </script>
-    
+
 </body>
+
 </html>

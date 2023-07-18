@@ -6,21 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-
+    
     <script>
-        let sum=0;
-        let jsum=0;
+        let max=1000;
+        let sum
+        let ave
+        let number
 
-        for(i=1; i<=100; i++){
-            for(j=i-1; j>0; j--){
-                jsum+=j;
-            }
-            sum=i+jsum;
+        for(i=0; i<1000; i++){
+            i++;
+            sum=sum+number;
+            i>=max;
+            ave=sum/max;
         }
-        document.write(sum);
+        
     </script>
 
-    
-    
+
 </body>
 </html>
